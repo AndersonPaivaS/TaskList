@@ -9,7 +9,7 @@ export default function Input() {
     <div className={styles.inputContainer}>
       <input onChange={handleTask} type="text" placeholder='Digite a sua tarefa' />
       <button onClick={ () => createTask(text)}> Adicionar </button>
-      <img src="/icons/to-do-list.png" alt="Delete" />
+      <img src="/to-do-list.png" alt="Delete" />
     </div> 
   )
 }

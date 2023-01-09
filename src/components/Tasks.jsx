@@ -24,7 +24,7 @@ export default function Tasks() {
             </button>
 
             <div className={styles.delete}>
-              <button onClick={ () => deleteTask(task.id)}> <img src="/icons/delete.png" alt="" /> </button>
+              <button onClick={ () => deleteTask(task.id)}> <img src="/delete.png" alt="" /> </button>
             </div>
 
           </div>
