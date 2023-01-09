@@ -4,9 +4,9 @@
     box-sizing: border-box;
 }
 
-@media screen and (max-width: 900px) {
+@media  (max-width: 900px) {
     .tasksContainer {
-        display: grid;
+        margin-top: 8vh;
     }
 }
 
@@ -40,8 +40,9 @@
     background: #A6D1E6;
 }
 
-.delete img {
-    max-width: 2rem;
+button svg {
+    padding: .4vh;
+    font-size: 1.89rem;
 }
 
 

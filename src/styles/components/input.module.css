@@ -18,6 +18,7 @@
 
 .inputContainer {
     display: flex;
+    align-items: center;
     gap: 1rem;
 
     width: 50vw;
@@ -62,4 +63,8 @@
 .inputContainer img {
     max-width: 5vw;
     max-height: 5vh;
+}
+
+.todoimg svg {
+    font-size: 4vh;
 }

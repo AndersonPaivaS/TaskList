@@ -4,6 +4,8 @@ import { useContext } from 'react'
 import { TaskListContext } from '../context/TaskListContext'
 import { useState } from 'react'
 
+
+import { RiDeleteBin6Fill } from 'react-icons/ri';
 export default function Tasks() {
 
   const { arrayTasks, deleteTask } = useContext(TaskListContext)
@@ -24,7 +26,7 @@ export default function Tasks() {
             </button>
 
             <div className={styles.delete}>
-              <button onClick={ () => deleteTask(task.id)}> <img src="/delete.png" alt="" /> </button>
+              <button onClick={ () => deleteTask(task.id)}> <RiDeleteBin6Fill /> </button>
             </div>
 
           </div>

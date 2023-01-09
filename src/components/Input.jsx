@@ -2,6 +2,8 @@ import styles from '../styles/components/input.module.css'
 import { React, useContext } from 'react'
 import { TaskListContext } from '../context/TaskListContext'
 
+import { FcTodoList } from 'react-icons/fc';
+
 export default function Input() {
   const { text, handleTask, createTask } = useContext(TaskListContext)
   
@@ -9,7 +11,8 @@ export default function Input() {
     <div className={styles.inputContainer}>
       <input onChange={handleTask} type="text" placeholder='Digite a sua tarefa' />
       <button onClick={ () => createTask(text)}> Adicionar </button>
-      <img src="/to-do-list.png" alt="Delete" />
+      <div className={styles.todoimg}> <FcTodoList /> </div>
+      
     </div> 
   )
 }
